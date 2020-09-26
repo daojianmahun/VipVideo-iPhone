@@ -228,6 +228,7 @@ static NSLock *downloadLock;
     
     
     self.writtenSize += progresser.writtenSize;
+    self.totalSize = progresser.totalSize;
     
     double progress = (self.playlist.segments.count - self.downloadArray.count+1)/(float)self.playlist.segments.count;
     self.progress = progress+(progresser.writtenSize/progresser.totalSize)/self.playlist.segments.count;
@@ -266,7 +267,7 @@ static NSLock *downloadLock;
     
     if(self.playlist !=nil)
     {
-        NSString *pathPrefix = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory,NSUserDomainMask,YES) objectAtIndex:0];
+        NSString *pathPrefix = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) objectAtIndex:0];
         NSString *saveTo = [[pathPrefix stringByAppendingPathComponent:kPathDownload] stringByAppendingPathComponent:self.filePath];
         NSString *fullpath = [saveTo stringByAppendingPathComponent:@"index.m3u8"];
         

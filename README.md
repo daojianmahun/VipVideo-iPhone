@@ -6,15 +6,36 @@
 
 * 本软件仅供学习参考，切勿商业使用。接口数据均来源于互联网。如有侵权，请联系删除。
 
-## VipVideo For Mac 
+---
 
-[https://github.com/iodefog/VipVideo](https://github.com/iodefog/VipVideo.git)
+### 禁止商业使用
+### 禁止商业使用
+### 禁止商业使用
+
+重要的事情说三遍
+
+---
+
+## VipVideo For Mac 地址 
+
+Git 地址：
+
+[https://github.com/iodefog/VipVideo.git](https://github.com/iodefog/VipVideo.git)
 
 ---
 
 ## 更新
+
 * 内容
-	* 2018-7-26 更新解析接口
+
+    * 2020-6-19 修改bug
+	* 2018-09-17  优化UI，增加我的页面（可切换PC和Iphone UA）
+	* 2018-09-10  新增崩溃统计bugly
+	* 2018-08-02  新增直播内容
+	* 2018-07-26  更新解析接口
+        * 2018-12-22  增大播放按钮区域，启用手势调整亮度和声音
+
+	---
 
 ## 软件功能介绍：
 
@@ -32,21 +53,24 @@
 
 ---
 
+
 ## 软件截图介绍
 
-1、 主页
+1、 示例图
 
-![](./images/QQ20180709-162310.png)
-
----
-
-2、 下载页
-
-![](./images/QQ20180709-162332.png)
+![](./images/1.png)
+![](./images/2.png)
+![](./images/3.png)
 
 ---
 
-3、 播放页
+2、 播放页
 
 ![](./images/player.png)
 
+
+---
+
+如需联系或者合作，请发送邮件 [iodefog@gmail.com](mailto:iodefog@gmail.com)
+
+QQ群：567503018

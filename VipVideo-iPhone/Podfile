@@ -9,7 +9,9 @@ pod 'AXWebViewController'
 pod 'HLAdditions'
 pod 'FTPopOverMenu'
 #pod 'TOWebViewController'
+#pod 'DZNEmptyDataSet'
 pod 'Masonry'
 pod 'CocoaHTTPServer'
+pod 'Bugly'
 
 end

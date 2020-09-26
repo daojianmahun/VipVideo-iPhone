@@ -10,6 +10,8 @@
 #import "VipURLManager.h"
 #import "QSPDownloadTool.h"
 #import "NSURLProtocol+WKWebVIew.h"
+#import <Bugly/Bugly.h>
+#import "BHBNetworkSpeed.h"
 
 @interface AppDelegate ()
 
@@ -24,10 +26,18 @@
     [NSURLProtocol wk_registerScheme:@"http"];
     [NSURLProtocol wk_registerScheme:@"https"];
 
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:HLVideoIphoneUAisOn];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:@{ @"UserAgent": HLiPhoneUA}];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [Bugly startWithAppId:@"c436559ac2"];
     
     [VipURLManager sharedInstance];
+    [QSPDownloadTool shareInstance];
     [[QSPDownloadTool shareInstance] startAllTask];
+    [[BHBNetworkSpeed shareNetworkSpeed] startMonitoringNetworkSpeed];
     
+    NSLog(@"%@", NSHomeDirectory());
     return YES;
 }
 
